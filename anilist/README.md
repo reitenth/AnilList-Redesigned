@@ -12,3 +12,10 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d2bfcff4-5d0f-47c4-98bf-11a7c1628035" />
 </p>
+
+<p align="center">
+	 vertical navbar
+	/ borders almost everything
+	/ adds old anilist dark theme
+	/ better margins and padding
+</p>
