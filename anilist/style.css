@@ -1,78 +1,73 @@
 /* ==UserStyle==
 @name           AniList Redesigned 
-@version        1.2
+@version        1.1
 @description    Revamped Anilist! Best to use with Automail - https://greasyfork.org/en/scripts/370473-aniscripts. Used vertical nav from - https://userstyles.world/style/5243/anilist-modifications.
 @author         reitenth
-@preprocessor   stylus
 @namespace      reitenth
 ==/UserStyle== */
-@-moz-document regexp(".*anilist.co.*") {
+@-moz-document domain(".*anilist.co.*") {
 
-// every page 
+/* theme */
 
-// theme 
-	5
-	rgb=()
-	rgba=() 
-    .site-theme-dark {
-        --color-background: 39, 44, 56;
-        --color-foreground: 31, 35, 45;
-        --color-foreground-grey: 25, 29, 38;
-        --color-foreground-grey-dark: 16, 20, 25;
-        --color-foreground-blue: 25, 29, 38;
-        --color-foreground-blue-dark: 19, 23, 29;
-        --color-background-blue-dark: 31, 35, 45;
-        --color-overlay: 31, 38, 49;
-        --color-shadow: 49, 54, 68;
-        --color-shadow-dark: 6, 13, 34;
-        --color-shadow-blue: 103, 132, 187;
-        --color-text: 159, 173, 189;
-        --color-text-light: 129, 140, 153;
-        --color-text-lighter: 133, 150, 165;
-        --color-text-bright: 237, 241, 245;
-        --color-background-100: 31, 35, 45;
-        --color-background-200: 39, 44, 56;
-    }
+	.site-theme-dark {
+    	--color-background: 39, 44, 56;
+		--color-foreground: 31, 35, 45;
+		--color-foreground-grey: 25, 29, 38;
+		--color-foreground-grey-dark: 16, 20, 25;
+		--color-foreground-blue: 25, 29, 38;
+		--color-foreground-blue-dark: 19, 23, 29;
+		--color-background-blue-dark: 31, 35, 45;
+		--color-overlay: 31, 38, 49;
+		--color-shadow: 49, 54, 68;
+		--color-shadow-dark: 6, 13, 34;
+		--color-shadow-blue: 103, 132, 187;
+		--color-text: 159, 173, 189;
+		--color-text-light: 129, 140, 153;
+		--color-text-lighter: 133, 150, 165;
+		--color-text-bright: 237, 241, 245;
+		--color-background-100: 31, 35, 45;
+		--color-background-200: 39, 44, 56;
+	}
 
-    .link[data-v-4fbac4e1]:hover,
-    .search[data-v-4fbac4e1] svg:hover,
-    .user .chevron[data-v-4fbac4e1]:hover {
-        color: rgb(61, 180, 242)
-    }
+	.link[data-v-4fbac4e1]:hover,
+	.search[data-v-4fbac4e1] svg:hover,
+	.user .chevron[data-v-4fbac4e1]:hover {
+		color: rgb(61, 180, 242)
+	}
 
-    .media-card[data-v-3429f686],
-    .cover[data-v-3b24ed8f],
-    .select[data-v-063abb0a],
-    .dropdown[data-v-a762532e],
-    .dropdown[data-v-38edf8f8],
-    .search-wrap[data-v-2a18451e],
-    .open-btn[data-v-a762532e],
-    .hover-data[data-v-3b24ed8f],
-    .options[data-v-063abb0a],
-    .dropdown[data-v-0bb70ffa]{
-        box-shadow: none
-    }
+	.media-card[data-v-3429f686],
+	.cover[data-v-3b24ed8f],
+	.select[data-v-063abb0a],
+	.dropdown[data-v-a762532e],
+	.dropdown[data-v-38edf8f8],
+	.search-wrap[data-v-2a18451e],
+	.open-btn[data-v-a762532e],
+	.hover-data[data-v-3b24ed8f],
+	.options[data-v-063abb0a],
+	.dropdown[data-v-0bb70ffa] {
+		box-shadow: none
+	}
 
-   .search[data-v-4fbac4e1] svg {
-        color: var(--color-text)
-    }
+	.search[data-v-4fbac4e1] svg {
+		color: rgb(var(--color-text))
+	}
 
-    .site-theme-dark .nav-unscoped.transparent {
-        background: rgba(31, 38, 49, .5);
-        color: rgb(var(--color-text));
-    }
+	.site-theme-dark .nav-unscoped.transparent {
+		background: rgba(31, 38, 49, .5);
+		color: rgb(var(--color-text));
+	}
 
-    .site-theme-dark .nav-unscoped,
-    .site-theme-dark .nav-unscoped.transparent:hover {
-        background: rgb(var(--color-foreground));
-    }
+	.site-theme-dark .nav-unscoped,
+	.site-theme-dark .nav-unscoped.transparent:hover {
+		background: rgb(var(--color-foreground));
+	}
 
 	* {
 		scrollbar-color: rgb(var(--color-blue)) rgba(0, 0, 0, 0);
 		scrollbar-width: auto;
 	}
 
-// remove footer 
+/* remove footer */
 
 	.footer {
 		display: none
@@ -83,7 +78,7 @@
 		border-color: #3e3e3e;
 	}
 
-// vertical navbar
+/* vertical navbar */
 
 	#app {
 		margin-top: 0;
@@ -92,10 +87,10 @@
 		border-color: #3e3e3e;
 	}
 
-#nav.nav {
-	height: 100%;
-}
-	
+	#nav.nav {
+		height: 100%;
+	}
+
 	.nav .user {
 		position: fixed;
 		display: grid;
@@ -104,7 +99,7 @@
 		width: 60px;
 		grid-template-rows: 55px 30px;
 	}
-	
+
 	.nav .search {
 		top: 60px;
 		width: 60px;
@@ -112,15 +107,15 @@
 		text-align: center;
 		position: fixed;
 	}
-	
+
 	.user-wrap {
 		padding: 0 11px 0 11px!important;
 	}
-	
+
 	#nav > div.wrap > div.user > a {
 		margin-left: 10px;
 	}
-	
+
 	#nav {
 		background: rgb(var(--color-background));
 		width: 60px;
@@ -129,19 +124,19 @@
 		top: 0!important;
 		bottom: 0!important;
 	}
-	
+
 	.nav .wrap .links {
 		font-size: 1.05rem;
 		flex-direction: column;
 	}
-	
+
 	.nav .wrap .links .link {
 		margin-bottom: 10px;
 		padding: 5px 0px;
 		text-align: center;
 		text-transform: lowercase;
 	}
-	
+
 	.nav .wrap .links .link:before {
 		display: block;
 		content: '';
@@ -153,71 +148,71 @@
 		background-repeat: no-repeat;
 		background-position: center;
 	}
-	
+
 	.nav .link[href="/home"]::before {
 		background: url("https://puu.sh/AvnoD/65ab2968a6.png");
 	}
-	
-	
+
+
 	.nav .link[href*="/user/"]::before {
 		background: url("https://puu.sh/AvnlD/7a305ea3c6.png");
 	}
-	
-	
+
+
 	.nav .link[href*="/animelist"]::before {
 		background: url("https://puu.sh/AvnpD/74ec4b003b.png");
 	}
-	
+
 	.nav .link[href*="/mangalist"]::before {
 		background: url("https://puu.sh/AvnpD/74ec4b003b.png");
 	}
-	
+
 	.nav .link[href="/search/anime"]::before {
 		background: url("https://puu.sh/AvnqX/a04ce29b43.png");
 	}
-	
+
 	#nav > div.wrap > div.links > span > a {
 		display: inline-block;
 	}
-	
+
 	.nav .link[href="/social"]::before {
 		background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="96" height="96" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2zM12 6a3 3 0 0 0 0 6a3 3 		0 		0 0 0 -6zM6 18h12v-1a6 3 0 0 0 -12 0z" fill="rgb(204,204,204)"/></svg>');
 	}
-	
+
 	.nav .link[href*="/forum"]::before {
 		background: url("https://puu.sh/Avnqt/1fc2afcc8c.png");
 	}
-	
+
 	.nav .link[href="/login"]::before {
 		background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="96" height="96" viewBox="0 0 24 24"><path d="m12 3l-10 9h3v8h5v-6h4v6h5v-8h3z" fill="rgb(204,204,204)"/></svg>');
 	}
-	
+
 	.login {
 		margin-left: 0!important;
 	}
-	
+
 	.nav .link[href="/signup"]::before {
 		background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="96" height="96" viewBox="0 0 24 24"><g fill="rgb(204,204,204)"><circle cx="15" cy="8" r="3"/><path d="M9 18h12v-1a6 3 0 0 0 -12 0z"/><text x="4" 		y="14" 			font-weight="bold" font-size="70%">+</text></g></svg>');
 		filter: brightness(2)!important;
 	}
-	
+
 	.signup {
 		margin-left: -70px;
 		border-radius: 0!important;
 		color: white!important;
 	}
-	
+
 	.nav .logo {
 		position: absolute;
 		bottom: 0;
 		width: 60px;
 	}
-	
+
 	.user .chevron {
 		display: none;
 	}
 
-// user dropdown
+/* User dropdown */
 
 	#nav > div.wrap > div.user > div > div.dropdown {
 		left: 60px;
@@ -227,7 +222,8 @@
 		display: none;
 	}
 
-	/* browse dropdown */
+/* browse dropdown */
+
 	#nav > div.wrap > div.links > span > div {
 		left: 60px;
 		top: 0;
@@ -258,10 +254,8 @@
 }
 
 @-moz-document regexp(".*anilist.co/(anime|manga).*") {
-	
-// anime/manga page 
-	
-// description box
+
+/* description box */
 
 	.header[data-v-5776f768] {
 		background: rgb(var(--color-background));
@@ -272,6 +266,7 @@
 		padding-right: 10px;
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 		background: rgb(var(--color-foreground));
 		text-align: center
 	}
@@ -293,46 +288,47 @@
 	.description[data-v-5776f768] {
 		max-width: 2000px;
 	}
+	
+/* banner */
 
-// remove banner 
-
-	.banner {
-		display: ;
+	.banner[data-v-5776f768] {
+		max-width: 1325px;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid;
+		border-color: #3e3e3e;
+		height: 300px;
+		border-radius: 10px;
 	}
 	
-	.banner[data-v-5776f768] {
-	max-width: 1325px;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	border: 10px solid;
-	border-color: #1f232d;
-	height: 300px;
-}
-
-// poster box 
+/* poster box */
 
 	.cover-wrap.overlap-banner[data-v-5776f768] {
 		margin-top: 0px;
 		background: rgb(var(--color-foreground));
+		padding: 10px;
+		border-radius: 10px;
 		border: 1px solid;
 		border-color: #3e3e3e;
 	}
 
 	.actions[data-v-5776f768] {
-		margin-left: 20px;
-		margin-right: 20px;
-		margin-top: 0px;
-		width: 80%
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		width: 100%;		
 	}
 
 	.cover[data-v-5776f768] {
-		margin: 20px;
-		width: 80%;
+		width: 100%;
 		vertical-align: middle;
-	}
+		border-radius: 10px;
 
-// relations
+		margin-top: 0px;
+	} 
+
+/* relations */
 
 	.relations.small > div {
 		margin-left: 0px;
@@ -357,10 +353,12 @@
 
 	.media .relations .cover[href^="/manga/"] {
 		border-bottom-style: none;
+		border-radius: 10px;
 	}
 
 	.media .relations .cover[href^="/anime/"] {
 		border-bottom-style: none;
+		border-radius: 10px;
 	}
 
 	.media-preview-card[data-v-6dc78144] {
@@ -368,6 +366,7 @@
 		grid-template-columns: 60px auto;
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.title[data-v-6dc78144] {
@@ -382,9 +381,13 @@
 
 	.hohStatusDot {
 		display: none;
+	} 
+	
+	.content[data-v-6dc78144] {
+ 		border-radius: 10px;
 	}
-
-// content box 
+	
+/* content box */
 
 	.content[data-v-c93e1c70] {
 		grid-column-gap: 30px;
@@ -393,22 +396,29 @@
 
 	a.cover {
 		margin: 7px;
-	}
-
-// characters/staff box 
+	} 
+	
+/* characters/staff box */
 
 	.role-card[data-v-f92815d6] {
 		background: rgb(var(--color-foreground));
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
+	} 
+	
+	.cover[data-v-f92815d6] {
+		border-radius: 10px;
 	}
-
-// info box 
+	
+/* info box */
 
 	.data[data-v-d3a518a6] {
 		background: rgb(var(--color-foreground));
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
+
 	}
 
 	.data-set {
@@ -428,32 +438,38 @@
 	.tag[data-v-c403a904] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
+
 	}
 
-// status/score distrubtion 
-
+/* status/score distrubtion */
+		
 	.overview[data-v-cdf07c88] .content-wrap {
 		background: rgb(var(--color-foreground));
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.media-score-distribution {
 		background: rgb(var(--color-foreground));
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.episodes {
 		display: none;
-	}
+	} 
 
-// trailer/folllowing 
+/* trailer/folllowing */
 
 	.follow[data-v-69b91520] {
 		background: rgb(var(--color-foreground));
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
+
 	}
 
 	.trailer {
@@ -464,20 +480,22 @@
 	.video[data-v-cc58dc40] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.trailer .video {
 		height: calc(98% - 30px);
 		padding: 7px;
 		background: rgb(var(--color-foreground));
-	}
+	} 
 
-// threads/reviews 
+/* threads/reviews */
 
 	.thread-card[data-v-550f7194] {
 		background: rgb(var(--color-foreground));
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.content[data-v-24561a98] {
@@ -489,15 +507,14 @@
 	a.user {
 		border: 1px solid;
 		border-color: #3e3e3e;
-	}
-
-// reccomendations 
-
+	} 
+	
+/* reccomendations */
 	.recommendation-card {
 		border: 1px solid;
 		border-color: #3e3e3e;
 		background: rgb(var(--color-foreground));
-
+		border-radius: 10px;
 	}
 
 	.cover[data-v-38341878] {
@@ -505,13 +522,14 @@
 		margin: 7px;
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
-	
+
 	.title[data-v-38341878] {
 		text-align: center;
 	}
 
-// list editor 
+/*list editor */
 
 	.site-theme-dark .el-select-dropdown,
 	.site-theme-dark .el-dropdown-menu,
@@ -519,16 +537,16 @@
 		background: rgb(var(--color-foreground));
 		border: 1px solid;
 		border-color: #3e3e3e;
-	}
-
-// staff page 
+	} 
+	
+/*staff page */
 
 	#hohStaffTabFilter > input {
 		border: 1px solid;
 		border-color: #3e3e3e;
-	}
-	
-// social page
+	} 
+
+/* social page */
 
 	.load-more[data-v-6f203cf2] {
 		border: 1px solid;
@@ -547,10 +565,8 @@
 }
 
 @-moz-document regexp(".*anilist.co/user/.*") {
-	
-// user page 
 
-// activity box
+	/* activity box */
 
 	.list.small[data-v-04d66030] {
 		border: 1px solid;
@@ -572,23 +588,23 @@
 		border: 1px solid;
 		border-color: #3e3e3e;
 	}
-	
+
 	.text[data-v-04d66030] {
 		border: 1px solid;
 		border-color: #3e3e3e;
 	}
-	
+
 	.input[data-v-c574a71c] .el-textarea__inner {
 		border: 1px solid;
 		border-color: #3e3e3e;
 	}
-	
+
 	.markdown-editor {
 		border: 1px solid;
 		border-color: #3e3e3e;
 	}
 
-// content boxes
+/* content boxes */
 
 	.overview[data-v-5c30286e] .content-wrap {
 		border: 1px solid;
@@ -599,8 +615,8 @@
 		padding-left: 0px;
 	}
 	
-// favorites page 
-
+/* favorites page */
+	
 	.favourites-wrap[data-v-ddf96a3c] {
 		border: 1px solid;
 		border-color: #3e3e3e;
@@ -608,10 +624,8 @@
 }
 
 @-moz-document regexp(".*anilist.co/user/.*/(animelist|mangalist).*") {
-	
-// user list page 
 
-// list table
+/* list table */
 
 	.medialist.table .list-section {
 		border: 1px solid;
@@ -627,8 +641,8 @@
 		border: 1px solid;
 		border-color: #3e3e3e;
 	}
-
-// info box
+	
+/* info box */
 
 	.medialist .filters .filter-group:first-child > span {
 		border: 1px solid;
@@ -671,16 +685,14 @@
 }
 
 @-moz-document regexp(".*anilist.co/home") {
-	
-// home page 
 
-// activity box
+/* activity box */
 
 	.wrap[data-v-04d66030] {
 		border: 1px solid;
 		border-color: #3e3e3e;
 	}
-	
+
 	.load-more {
 		border: 1px solid;
 		border-color: #3e3e3e;
@@ -706,10 +718,9 @@
 
 	.feed-type-toggle > div[data-v-8209bd04] {
 		color: #71757e;
-	}
-
-// in progress 
-
+	} 
+	
+/* in progress */
 	.list-preview {
 		border: 1px solid;
 		border-color: #3e3e3e;
@@ -718,36 +729,32 @@
 	.list-preview[data-v-6aea970d] {
 		grid-gap: 19px;
 	}
-	
+
 	.list-preview-wrap {
 		margin-top: 12px;
-	} 
+	}
 
-
-// forum activity 
+/*forum activity */
 
 	.hohNoAWC .thread-card.small {
 		border: 1px solid;
 		border-color: #3e3e3e;
-	}
-
-// trending anime and manga 
-
+	} 
+	
+/* trending anime and manga */
 	.media-preview[data-v-796abd11] {
 		border: 1px solid;
 		border-color: #3e3e3e;
 		grid-gap: 19px;
-	}
+	} 
 
-// recent reviews 
-
+/* recent reviews */
 	.home .review-card {
 		border: 1px solid;
 		border-color: #3e3e3e;
-	}
+	} 
 
-// content boxes 
-
+/* content boxes */
 	.home[data-v-6860dbfd] .section-header {
 		padding-left: 0px;
 	}
