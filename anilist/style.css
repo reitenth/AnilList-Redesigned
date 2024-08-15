@@ -293,7 +293,7 @@
 
 	.banner[data-v-5776f768] {
 		max-width: 1325px;
-		margin-top: 10px;
+		margin-top: 50px;
 		margin-left: auto;
 		margin-right: auto;
 		border: 1px solid;
@@ -537,6 +537,7 @@
 		background: rgb(var(--color-foreground));
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	} 
 	
 /*staff page */
@@ -544,6 +545,7 @@
 	#hohStaffTabFilter > input {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	} 
 
 /* social page */
@@ -551,16 +553,19 @@
 	.load-more[data-v-6f203cf2] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.list[data-v-04d66030] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.hohTimelineEntry {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 }
 
@@ -571,6 +576,7 @@
 	.list.small[data-v-04d66030] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.status {
@@ -587,21 +593,25 @@
 	.load-more[data-v-6f203cf2] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.text[data-v-04d66030] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.input[data-v-c574a71c] .el-textarea__inner {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.markdown-editor {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 /* content boxes */
@@ -609,6 +619,7 @@
 	.overview[data-v-5c30286e] .content-wrap {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.overview[data-v-5c30286e] .section-header {
@@ -620,6 +631,7 @@
 	.favourites-wrap[data-v-ddf96a3c] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 }
 
@@ -630,6 +642,7 @@
 	.medialist.table .list-section {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.medialist.table.compact .section-name {
@@ -640,6 +653,11 @@
 	.actions[data-v-0567dd85] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
+	}
+	
+	.theme-switch[data-v-0567dd85] {
+		border-radius: 10px;
 	}
 	
 /* info box */
@@ -648,6 +666,7 @@
 		border: 1px solid;
 		border-color: #3e3e3e;
 		background: rgb(var(--color-foreground));
+		border-radius: 10px;
 	}
 
 	.filter-group .draggable > span[data-v-170179fc],
@@ -660,6 +679,7 @@
 	.el-input__inner,
 	.el-textarea__inner {
 		color: #71757e;
+		border-radius: 10px;
 	}
 
 	.filter-group .count[data-v-170179fc] {
@@ -671,6 +691,7 @@
 	.el-textarea {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.hohButton {
@@ -681,6 +702,7 @@
 		border: 1px solid;
 		border-color: #3e3e3e;
 		background: rgb(var(--color-foreground));
+		border-radius: 10px;
 	}
 }
 
@@ -691,11 +713,13 @@
 	.wrap[data-v-04d66030] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.load-more {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.cover[data-v-04d66030] {
@@ -705,11 +729,13 @@
 	.input[data-v-c574a71c] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.feed-type-toggle[data-v-8209bd04] {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.feed-type-toggle > div.active[data-v-8209bd04] {
@@ -724,6 +750,7 @@
 	.list-preview {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	.list-preview[data-v-6aea970d] {
@@ -739,6 +766,7 @@
 	.hohNoAWC .thread-card.small {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	} 
 	
 /* trending anime and manga */
@@ -746,12 +774,14 @@
 		border: 1px solid;
 		border-color: #3e3e3e;
 		grid-gap: 19px;
+		border-radius: 10px;
 	} 
 
 /* recent reviews */
 	.home .review-card {
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	} 
 
 /* content boxes */
