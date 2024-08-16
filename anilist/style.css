@@ -567,7 +567,37 @@
 
 @-moz-document regexp(".*anilist.co/user/.*") {
 
-	/* activity box */
+/* banner */
+
+	.banner[data-v-1cc2919e] {
+		max-width: 1325px;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid;
+		border-color: #3e3e3e;
+		height: 300px;
+		border-radius: 10px;
+	}
+
+/* navbar */
+
+	.nav-wrap[data-v-1cc2919e] {
+		max-width: 1325px;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid;
+		border-color: #3e3e3e;
+		border-radius: 10px;
+	}
+
+/* hoh download banner button */
+	.hohDownload {
+		display: none;
+	}
+	
+/* activity box */
 
 	.list.small[data-v-04d66030] {
 		border: 1px solid;
