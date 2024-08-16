@@ -306,25 +306,20 @@
 
 	.cover-wrap.overlap-banner[data-v-5776f768] {
 		margin-top: 0px;
-		background: rgb(var(--color-foreground));
-		padding: 10px;
-		border-radius: 10px;
-		border: 1px solid;
-		border-color: #3e3e3e;
 	}
 
 	.actions[data-v-5776f768] {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 20px;
-		width: 100%;		
+		width: 100%;
+		margin-bottom: 2px;
 	}
 
 	.cover[data-v-5776f768] {
 		width: 100%;
 		vertical-align: middle;
 		border-radius: 10px;
-
 		margin-top: 0px;
 	} 
 
