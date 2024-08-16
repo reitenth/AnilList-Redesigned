@@ -5,7 +5,7 @@
 @author         reitenth
 @namespace      reitenth
 ==/UserStyle== */
-@-moz-document domain(".*anilist.co.*") {
+@-moz-document regexp(".*anilist.co.*") {
 
 /* theme */
 
@@ -164,6 +164,10 @@
 	}
 
 	.nav .link[href*="/mangalist"]::before {
+		background: url("https://puu.sh/AvnpD/74ec4b003b.png");
+	}
+	
+	.nav .link[href*="/search/manga"]::before {
 		background: url("https://puu.sh/AvnpD/74ec4b003b.png");
 	}
 
