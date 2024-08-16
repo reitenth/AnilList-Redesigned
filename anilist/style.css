@@ -497,6 +497,7 @@
 		background: rgb(var(--color-foreground));
 		border: 1px solid;
 		border-color: #3e3e3e;
+		border-radius: 10px;
 	}
 
 	a.user {
