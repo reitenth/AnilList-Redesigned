@@ -17,5 +17,5 @@
 	 vertical navbar
 	/ borders almost everything
 	/ adds old anilist dark theme
-	/ better margins and padding
+	/ better margins - padding - rounded borders
 </p>
